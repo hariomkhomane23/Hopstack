@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#C0EAFA"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="#40359CEF"
+            android:gravity="center_horizontal">
+
+            <!-- Profile Image with CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:radius="70dp"
+                android:elevation="4dp"
+                android:layout_marginTop="25dp"
+                app:cardCornerRadius="70dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:id="@+id/imageProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_person_24"
+                    android:background="@android:color/darker_gray"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Upload Button -->
+            <Button
+                android:id="@+id/btnAddPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Photo"
+                android:background="@drawable/logbg"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/navyblue"
+                android:textColor="@android:color/white"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="14dp"
+                android:padding="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Name Field -->
+                    <EditText
+                        android:id="@+id/editName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Full Name"
+                        android:drawableLeft="@drawable/baseline_person_24"
+                        android:paddingStart="24dp"
+                        android:drawablePadding="12dp"/>
+
+                    <!-- Email Field -->
+                    <EditText
+                        android:id="@+id/editEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_email_24"
+                        android:hint="Email Address"
+                        android:paddingStart="24dp"
+                        android:drawablePadding="12dp"/>
+
+                    <!-- Phone Field -->
+                    <EditText
+                        android:id="@+id/editPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Phone Number"
+                        android:paddingStart="24dp"
+                        android:drawableLeft="@drawable/baseline_phone_android_24"
+                        android:drawablePadding="12dp"/>
+
+                    <!-- Room No -->
+                    <EditText
+                        android:id="@+id/editRoomNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Room Number"
+                        android:drawableLeft="@drawable/baseline_checkroom_24"
+                        android:paddingStart="24dp"
+                        android:drawablePadding="12dp"/>
+
+                    <!-- Branch -->
+                    <EditText
+                        android:id="@+id/editBranch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Branch"
+                        android:drawableLeft="@drawable/baseline_business_24"
+                        android:paddingStart="24dp"
+                        android:drawablePadding="12dp"/>
+
+                    <!-- Date of Birth -->
+                    <EditText
+                        android:id="@+id/editDob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Date of Birth"
+                        android:drawableLeft="@drawable/baseline_calendar_today_24"
+                        android:paddingStart="24dp"
+                        android:drawablePadding="12dp"/>
+                    <!-- Blood Group -->
+                    <EditText
+                        android:id="@+id/editBloodGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Blood Group"
+                        android:paddingStart="24dp"
+                        android:drawableLeft="@drawable/baseline_bloodtype_24"
+                        android:drawablePadding="12dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Save Profile Button -->
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Profile"
+                android:background="@drawable/logbg"
+                android:backgroundTint="@color/navyblue"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

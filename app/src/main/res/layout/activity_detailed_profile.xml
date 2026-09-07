@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3DEDF"
+    tools:context=".DetailedProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C0EAFA">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="Student Profile"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:background="@drawable/logbg"
+                android:backgroundTint="@color/navyblue"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingVertical="12dp"
+                android:layout_marginBottom="20dp"/>
+
+
+            <!-- Profile Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:radius="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/logbg"
+                android:backgroundTint="@color/white"
+                android:elevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:orientation="vertical"
+                    android:background="#E5EBEF"
+                    android:padding="16dp"
+                    android:gravity="top|center">
+
+                    <ImageView
+                        android:id="@+id/profileImage"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/baseline_person_24"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_bg"/>
+
+                    <TextView
+                        android:id="@+id/nameText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Name"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/emailText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:text="Email" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/logbg"
+                        android:backgroundTint="@android:color/white"
+                        android:padding="16dp"
+                        android:layout_marginTop="16dp"
+                        android:elevation="8dp"
+                        android:radius="20dp">
+
+                        <TableRow>
+                            <TextView android:text="Phone:" android:textSize="18sp" android:textStyle="bold"
+                                android:paddingRight="6dp"/>
+                            <TextView android:id="@+id/phoneText" android:textSize="18sp" />
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView android:text="Room No:" android:textSize="18sp" android:textStyle="bold" android:paddingRight="6dp"/>
+                            <TextView android:id="@+id/roomNoText" android:textSize="18sp"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView android:text="Branch:" android:textSize="18sp" android:textStyle="bold" android:paddingRight="6dp"/>
+                            <TextView android:id="@+id/branchText" android:textSize="18sp"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView android:text="Date of Birth:" android:textSize="18sp" android:textStyle="bold"
+                                android:paddingRight="6dp"/>
+                            <TextView android:id="@+id/dobText"  android:textSize="18sp"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView android:text="Blood Group:" android:textSize="18sp" android:textStyle="bold" android:paddingRight="6dp"/>
+                            <TextView android:id="@+id/bloodGroupText"  android:textSize="18sp"/>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Table Layout for Profile Details -->
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
